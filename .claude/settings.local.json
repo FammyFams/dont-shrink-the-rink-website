@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"/a/Users/matth/Desktop/dont shrink the rink\"/*.html \"/a/Users/matth/Desktop/dont shrink the rink/styles.css\")",
+      "WebFetch(domain:www.savelloydicerink.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx skills:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm --no-turbopack)",
+      "Bash(npx create-next-app@latest temp-project --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm --no-turbopack)",
+      "Bash(cp -r temp-project/* .)",
+      "Bash(cp -r temp-project/.* .)",
+      "Bash(rm -rf temp-project)",
+      "Bash(cp temp-project/package.json .)",
+      "Bash(cp temp-project/package-lock.json .)",
+      "Bash(cp temp-project/tsconfig.json .)",
+      "Bash(cp temp-project/postcss.config.mjs .)",
+      "Bash(cp temp-project/next.config.ts .)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(grep -r \"^---\" \"A:/Users/matth/Desktop/obsidian brain\" ! -path \"*/.git/*\" ! -path \"*/.agents/*\" ! -path \"*/.claude/*\" ! -path \"*/.obsidian/*\")"
+    ]
+  }
+}

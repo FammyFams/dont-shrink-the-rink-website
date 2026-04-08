@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2B6080;
+  --color-primary-dark: #1e4a61;
+  --color-primary-darker: #153548;
+  --color-ice-light: #BBDAED;
+  --color-ice-lighter: #ddedf7;
+  --color-mint: #94E0B9;
+  --color-mint-dark: #6fcf9a;
+  --color-white: #FFFFFF;
+  --color-gray: #C6C6C6;
+  --color-dark-text: #1a3344;
+  --color-body-text: #2c4a5c;
+  --color-light-text: #e0eef6;
+  --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes ice-sparkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition-duration: 0s !important; }
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-body-text);
+  line-height: 1.7;
+  font-size: 17px;
+}
