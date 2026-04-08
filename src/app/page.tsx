@@ -1,17 +1,13 @@
 import Link from "next/link";
+import ParallaxHero from "@/components/ParallaxHero";
 
 export default function HomePage() {
   return (
     <>
       {/* HERO */}
       <section className="relative text-white text-center py-[140px] px-6 overflow-hidden bg-primary-darker max-md:py-[100px]">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('https://i.redd.it/ewbwbbpph5eg1.jpeg')",
-          }}
-        />
+        {/* Background image with parallax */}
+        <ParallaxHero imageUrl="https://i.redd.it/ewbwbbpph5eg1.jpeg" />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(13,42,58,0.85)] via-[rgba(43,96,128,0.7)] to-[rgba(21,53,72,0.9)]" />
         {/* Ice sparkle */}
