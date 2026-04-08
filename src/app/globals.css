@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
@@ -14,6 +14,8 @@
   --color-dark-text: #1a3344;
   --color-body-text: #2c4a5c;
   --color-light-text: #e0eef6;
+  --color-urgent: #e85d4a;
+  --color-urgent-dark: #c94a39;
   --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
   --font-body: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -32,6 +34,16 @@
 @keyframes ice-sparkle {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(148, 224, 185, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(148, 224, 185, 0.6), 0 0 60px rgba(148, 224, 185, 0.2); }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @media (prefers-reduced-motion: reduce) {
