@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/take-action", label: "Take Action" },
-  { href: "/mission", label: "Mission" },
-  { href: "/testimonials", label: "Voices" },
-  { href: "/donate", label: "Donate" },
-  { href: "/contact", label: "Contact" },
+  { href: '/', label: 'Home' },
+  { href: '/take-action', label: 'Take Action' },
+  { href: '/mission', label: 'Mission' },
+  { href: '/testimonials', label: 'Voices' },
+  { href: '/donate', label: 'Donate' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Navigation() {
@@ -20,45 +20,51 @@ export default function Navigation() {
   return (
     <>
       {/* Urgency banner */}
-      <div className="bg-urgent text-white text-center py-2.5 px-4 text-sm font-semibold font-heading uppercase tracking-wider overflow-hidden relative">
-        <div className="animate-[ticker_20s_linear_infinite] whitespace-nowrap inline-block">
-          <span className="mx-8">APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW</span>
-          <span className="mx-8">SIGN THE PETITION</span>
-          <span className="mx-8">APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW</span>
-          <span className="mx-8">SIGN THE PETITION</span>
-          <span className="mx-8">APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW</span>
-          <span className="mx-8">SIGN THE PETITION</span>
+      <div className='bg-urgent text-white text-center py-2.5 px-4 text-sm font-semibold font-heading uppercase tracking-wider overflow-hidden relative'>
+        <div className='animate-[ticker_20s_linear_infinite] whitespace-nowrap inline-block'>
+          <span className='mx-8'>
+            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
+          </span>
+          <span className='mx-8'>SIGN THE PETITION</span>
+          <span className='mx-8'>
+            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
+          </span>
+          <span className='mx-8'>SIGN THE PETITION</span>
+          <span className='mx-8'>
+            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
+          </span>
+          <span className='mx-8'>SIGN THE PETITION</span>
         </div>
       </div>
 
-      <nav className="bg-[#0d2a3a] sticky top-0 z-50 backdrop-blur-[10px] border-b-2 border-mint/20">
-        <div className="max-w-[1140px] mx-auto flex items-center justify-between h-[72px] px-6">
+      <nav className='bg-[#0d2a3a] sticky top-0 z-50 backdrop-blur-[10px] border-b-2 border-mint/20'>
+        <div className='max-w-[1140px] mx-auto flex items-center justify-between h-[72px] px-6'>
           <Link
-            href="/"
-            className="text-white font-heading font-black text-[22px] uppercase tracking-[1.5px] hover:text-mint transition-colors"
+            href='/'
+            className='text-white font-heading font-black text-[22px] uppercase tracking-[1.5px] hover:text-mint transition-colors'
           >
-            <span className="text-mint">Don&apos;t Shrink</span> the Rink
+            <span className='text-mint'>Save Lloyd</span> Ice Rink
           </Link>
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden text-white text-3xl p-1"
+            className='lg:hidden text-white text-3xl p-1'
             onClick={() => setOpen(!open)}
-            aria-label="Toggle navigation"
+            aria-label='Toggle navigation'
           >
-            {open ? "\u2715" : "\u2630"}
+            {open ? '\u2715' : '\u2630'}
           </button>
 
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-1">
+          <ul className='hidden lg:flex items-center gap-1'>
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium font-heading uppercase tracking-wider transition-all hover:bg-ice-light/15 hover:text-white hover:-translate-y-0.5 ${
                     pathname === link.href
-                      ? "text-white bg-ice-light/15"
-                      : "text-light-text"
+                      ? 'text-white bg-ice-light/15'
+                      : 'text-light-text'
                   }`}
                 >
                   {link.label}
@@ -67,10 +73,10 @@ export default function Navigation() {
             ))}
             <li>
               <a
-                href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-lg text-sm font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all animate-[pulse-glow_2s_ease-in-out_infinite]"
+                href='https://www.change.org/p/save-the-lloyd-center-ice-rink'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='px-5 py-2.5 rounded-lg text-sm font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all animate-[pulse-glow_2s_ease-in-out_infinite]'
               >
                 Act Now
               </a>
@@ -80,8 +86,8 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {open && (
-          <div className="lg:hidden bg-[#0d2a3a] border-b-2 border-mint px-6 pb-6">
-            <ul className="flex flex-col gap-0.5">
+          <div className='lg:hidden bg-[#0d2a3a] border-b-2 border-mint px-6 pb-6'>
+            <ul className='flex flex-col gap-0.5'>
               {links.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -89,8 +95,8 @@ export default function Navigation() {
                     onClick={() => setOpen(false)}
                     className={`block px-4 py-3.5 rounded-lg text-[15px] font-medium font-heading uppercase tracking-wider transition-all hover:bg-ice-light/15 hover:text-white ${
                       pathname === link.href
-                        ? "text-white bg-ice-light/15"
-                        : "text-light-text"
+                        ? 'text-white bg-ice-light/15'
+                        : 'text-light-text'
                     }`}
                   >
                     {link.label}
@@ -99,10 +105,10 @@ export default function Navigation() {
               ))}
               <li>
                 <a
-                  href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-3.5 rounded-lg text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker text-center mt-2"
+                  href='https://www.change.org/p/save-the-lloyd-center-ice-rink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='block px-4 py-3.5 rounded-lg text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker text-center mt-2'
                 >
                   Act Now &mdash; Sign the Petition
                 </a>

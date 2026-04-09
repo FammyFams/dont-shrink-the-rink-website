@@ -17,7 +17,10 @@
       "Bash(cp temp-project/next.config.ts .)",
       "Bash(npm run:*)",
       "Bash(npm install:*)",
-      "Bash(grep -r \"^---\" \"A:/Users/matth/Desktop/obsidian brain\" ! -path \"*/.git/*\" ! -path \"*/.agents/*\" ! -path \"*/.claude/*\" ! -path \"*/.obsidian/*\")"
+      "Bash(gh api:*)",
+      "Bash(where gh:*)",
+      "Bash(find \"A:\\\\Users\\\\matth\\\\Desktop\\\\obsidian brain\\\\Daily Notes\" -type f -name \"*.md\" -exec grep -l \"rink\\\\|lloyd\\\\|shrink\\\\|ice\\\\|skating\\\\|SLIC\\\\|coalition\" {} \\\\;)",
+      "Bash(find \"A:\\\\Users\\\\matth\\\\Desktop\\\\obsidian brain\" -type f \\\\\\( -name \"*.md\" -o -name \"*.txt\" \\\\\\) ! -path \"*/.obsidian/*\" ! -path \"*/.agents/*\" ! -path \"*/.claude/*\" ! -path \"*/Excalidraw/Scripts/*\" ! -path \"*/Templates/*\" -exec grep -l \"lloyd\\\\|rink\\\\|shrink\\\\|ice.*rink\\\\|save.*lloyd\\\\|coalition\" {} \\\\;)"
     ]
   }
 }
