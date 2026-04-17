@@ -45,7 +45,7 @@ export default function ContactPage() {
               <h3 className="font-heading text-xl font-extrabold uppercase tracking-wide mb-2 text-primary-darker">
                 Email Us
               </h3>
-              <p className="text-light-text mb-4 text-sm">
+              <p className="text-body-text mb-4 text-sm">
                 Questions, press, partnerships &mdash; drop us a line anytime.
               </p>
               <a
@@ -64,7 +64,7 @@ export default function ContactPage() {
               <h3 className="font-heading text-xl font-extrabold uppercase tracking-wide mb-2 text-primary-darker">
                 Follow the Fight
               </h3>
-              <p className="text-light-text mb-4 text-sm">
+              <p className="text-body-text mb-4 text-sm">
                 Live updates on the appeal, hearings, and community actions.
               </p>
               <div className="flex gap-2 flex-wrap">
@@ -128,7 +128,7 @@ export default function ContactPage() {
               Drop Us a <span className="text-mint-dark">Line</span>
             </h2>
             <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-            <p className="text-light-text max-w-[560px] mx-auto">
+            <p className="text-body-text max-w-[560px] mx-auto">
               Tell us who you are and how you&apos;d like to help &mdash; or just ask a question. We read every message.
             </p>
           </div>
