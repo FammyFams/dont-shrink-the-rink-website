@@ -96,7 +96,7 @@ export default function EmailSignupModal() {
       role='dialog'
       aria-modal='true'
       aria-labelledby='signup-modal-title'
-      className='fixed inset-0 z-[100] flex items-center justify-center px-4 py-8 bg-primary-darker/80 backdrop-blur-sm animate-[fadeUp_0.25s_ease-out]'
+      className='fixed inset-0 z-[100] flex items-center justify-center px-4 py-8 bg-primary-darker/55 backdrop-blur-[2px] animate-[fadeUp_0.25s_ease-out]'
       onClick={dismiss}
     >
       <div
