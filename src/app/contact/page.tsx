@@ -34,7 +34,7 @@ export default function ContactPage() {
       </section>
 
       {/* MESSAGE FORM */}
-      <section className="relative py-20 px-6 max-md:py-[50px] max-md:px-4 bg-ice-light/15 overflow-hidden">
+      <section className="relative py-12 px-6 max-md:py-8 max-md:px-4 bg-ice-light/15 overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -43,19 +43,6 @@ export default function ContactPage() {
           }}
         />
         <div className="relative max-w-[820px] mx-auto">
-          <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
-              Send a Message
-            </span>
-            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-              Drop Us a <span className="text-mint-dark">Line</span>
-            </h2>
-            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-            <p className="text-body-text max-w-[560px] mx-auto">
-              Tell us who you are and how you&apos;d like to help &mdash; or just ask a question. We read every message.
-            </p>
-          </div>
-
           {/* Gradient frame — gives the embed a branded edge without touching Google's internal styles */}
           <div className="p-[3px] rounded-[20px] bg-gradient-to-br from-primary via-mint to-ice-light shadow-[0_30px_80px_-25px_rgba(43,96,128,0.4)]">
             <div className="rounded-[17px] overflow-hidden bg-white">
