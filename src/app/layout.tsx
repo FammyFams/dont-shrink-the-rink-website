@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import EmailSignupModal from "@/components/EmailSignupModal";
 
 export const metadata: Metadata = {
   title: "Save Lloyd Ice Coalition — Don't Shrink the Rink",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
+        <EmailSignupModal />
       </body>
     </html>
   );
