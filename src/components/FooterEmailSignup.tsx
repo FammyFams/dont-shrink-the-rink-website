@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const GOOGLE_FORM_ACTION =
   'https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/formResponse';
@@ -28,6 +29,7 @@ export default function FooterEmailSignup() {
 
     try {
       await fetch(GOOGLE_FORM_ACTION, { method: 'POST', mode: 'no-cors', body });
+      sendGAEvent('event', 'email_signup', { method: 'footer' });
       setStatus('success');
       setEmail('');
     } catch {

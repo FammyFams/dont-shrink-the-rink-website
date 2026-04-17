@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { usePathname } from 'next/navigation';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const GOOGLE_FORM_ACTION =
   'https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/formResponse';
@@ -78,6 +79,7 @@ export default function EmailSignupModal() {
 
     try {
       await fetch(GOOGLE_FORM_ACTION, { method: 'POST', mode: 'no-cors', body });
+      sendGAEvent('event', 'email_signup', { method: 'modal' });
       setStatus('success');
       try {
         localStorage.setItem(STORAGE_KEY, '1');

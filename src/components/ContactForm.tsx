@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const GOOGLE_FORM_ACTION =
   'https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/formResponse';
@@ -43,6 +44,7 @@ export default function ContactForm() {
         mode: 'no-cors',
         body,
       });
+      sendGAEvent('event', 'email_signup', { method: 'contact_form' });
       setStatus('success');
       setValues({ name: '', email: '', phone: '', message: '' });
     } catch {
@@ -103,7 +105,6 @@ export default function ContactForm() {
               id='cf-name'
               name='cf-name'
               type='text'
-              required
               autoComplete='name'
               placeholder='Name'
               value={values.name}
@@ -111,7 +112,7 @@ export default function ContactForm() {
               className={inputClass}
             />
             <label htmlFor='cf-name' className={labelClass}>
-              Name <span className='text-mint-dark'>*</span>
+              Name
             </label>
           </div>
 
