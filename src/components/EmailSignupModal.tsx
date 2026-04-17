@@ -149,14 +149,11 @@ export default function EmailSignupModal() {
             </div>
           ) : (
             <div className='relative'>
-              <span className='inline-block px-3 py-1 rounded-full font-heading text-[11px] font-bold uppercase tracking-[2px] bg-urgent/15 text-urgent border border-urgent/30 mb-4'>
-                Appeal in Progress
-              </span>
               <h2
                 id='signup-modal-title'
                 className='font-heading text-[clamp(26px,3.5vw,40px)] font-extrabold uppercase tracking-wide text-primary-darker mb-3 leading-[0.95]'
               >
-                Join the <span className='text-mint-dark'>Fight</span>
+                Join the <span className='text-mint-dark'>Email List</span>
               </h2>
               <p className='text-body-text mb-6 text-[15px] leading-relaxed'>
                 Get updates on the appeal, hearing dates, and the moments your voice matters most. No spam &mdash; just the calls to action that count.
