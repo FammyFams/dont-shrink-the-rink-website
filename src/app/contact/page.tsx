@@ -110,72 +110,29 @@ export default function ContactPage() {
             </h2>
             <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded my-5 border-none" />
 
-            <form className="max-w-[560px] mt-6" action="#" method="POST">
-              <label
-                htmlFor="contact-name"
-                className="block font-heading font-semibold uppercase tracking-wide text-[13px] mb-2 mt-6 text-primary"
+            <div className="mt-6 rounded-xl overflow-hidden border-2 border-ice-light bg-white">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
+                width="100%"
+                height="900"
+                className="w-full block"
+                title="Contact Save Lloyd Ice Coalition"
               >
-                Name *
-              </label>
-              <input
-                type="text"
-                id="contact-name"
-                name="name"
-                required
-                placeholder="Your full name"
-                className="w-full px-[18px] py-4 border-2 border-ice-light rounded-xl text-base font-body bg-white focus:outline-none focus:border-primary focus:shadow-[0_0_0_4px_rgba(43,96,128,0.1)] transition-all"
-              />
-
-              <label
-                htmlFor="contact-email"
-                className="block font-heading font-semibold uppercase tracking-wide text-[13px] mb-2 mt-6 text-primary"
+                Loading&hellip;
+              </iframe>
+            </div>
+            <p className="text-sm text-gray mt-3">
+              Having trouble?{" "}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
               >
-                Email *
-              </label>
-              <input
-                type="email"
-                id="contact-email"
-                name="email"
-                required
-                placeholder="your@email.com"
-                className="w-full px-[18px] py-4 border-2 border-ice-light rounded-xl text-base font-body bg-white focus:outline-none focus:border-primary focus:shadow-[0_0_0_4px_rgba(43,96,128,0.1)] transition-all"
-              />
-
-              <label
-                htmlFor="contact-phone"
-                className="block font-heading font-semibold uppercase tracking-wide text-[13px] mb-2 mt-6 text-primary"
-              >
-                Phone (optional)
-              </label>
-              <input
-                type="tel"
-                id="contact-phone"
-                name="phone"
-                placeholder="(503) 555-0123"
-                className="w-full px-[18px] py-4 border-2 border-ice-light rounded-xl text-base font-body bg-white focus:outline-none focus:border-primary focus:shadow-[0_0_0_4px_rgba(43,96,128,0.1)] transition-all"
-              />
-
-              <label
-                htmlFor="contact-message"
-                className="block font-heading font-semibold uppercase tracking-wide text-[13px] mb-2 mt-6 text-primary"
-              >
-                Message *
-              </label>
-              <textarea
-                id="contact-message"
-                name="message"
-                required
-                placeholder="How can we help?"
-                className="w-full px-[18px] py-4 border-2 border-ice-light rounded-xl text-base font-body bg-white min-h-[160px] resize-y focus:outline-none focus:border-primary focus:shadow-[0_0_0_4px_rgba(43,96,128,0.1)] transition-all"
-              />
-
-              <button
-                type="submit"
-                className="w-full mt-7 px-9 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] hover:shadow-lg transition-all relative overflow-hidden"
-              >
-                Send Away!
-              </button>
-            </form>
+                Open the form in a new tab
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>

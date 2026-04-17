@@ -54,16 +54,14 @@ export default function Footer() {
             <p className="mb-5 text-light-text/80">
               Get updates on the appeal, upcoming hearings, and ways to help.
             </p>
-            <div className="flex gap-3 max-w-[440px] flex-wrap">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="flex-1 min-w-[220px] px-[18px] py-4 border-2 border-ice-light/20 rounded-xl bg-white/5 text-white text-base font-body placeholder:text-gray focus:outline-none focus:border-mint transition-colors"
-              />
-              <button className="px-8 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all">
-                Join
-              </button>
-            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all"
+            >
+              Sign Up for Updates
+            </a>
             <p className="text-[13px] text-gray mt-3">No spam. Only updates that matter.</p>
           </div>
         </div>
