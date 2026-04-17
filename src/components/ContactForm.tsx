@@ -76,9 +76,9 @@ export default function ContactForm() {
   }
 
   const inputClass =
-    'peer w-full bg-transparent border-0 border-b-2 border-ice-light/80 pt-7 pb-2.5 px-0 text-[17px] text-primary-darker font-body placeholder-transparent focus:outline-none focus:border-mint transition-colors';
+    'peer w-full bg-transparent border-0 border-b-2 border-primary/30 pt-7 pb-2.5 px-0 text-[17px] text-primary-darker font-body placeholder-transparent focus:outline-none focus:border-mint-dark transition-colors';
   const labelClass =
-    'absolute left-0 top-2 font-heading text-xs font-bold uppercase tracking-[2px] text-primary transition-all peer-placeholder-shown:top-7 peer-placeholder-shown:text-[15px] peer-placeholder-shown:tracking-normal peer-placeholder-shown:text-gray peer-focus:top-2 peer-focus:text-xs peer-focus:tracking-[2px] peer-focus:text-mint-dark';
+    'absolute left-0 top-2 font-heading text-xs font-extrabold uppercase tracking-[2px] text-primary-darker transition-all peer-placeholder-shown:top-7 peer-placeholder-shown:text-[15px] peer-placeholder-shown:tracking-normal peer-placeholder-shown:text-primary-darker/70 peer-placeholder-shown:font-bold peer-focus:top-2 peer-focus:text-xs peer-focus:tracking-[2px] peer-focus:text-mint-dark peer-focus:font-extrabold';
 
   return (
     <div className='p-[3px] rounded-[20px] bg-gradient-to-br from-primary via-mint to-ice-light shadow-[0_30px_80px_-25px_rgba(43,96,128,0.4)]'>
@@ -146,7 +146,7 @@ export default function ContactForm() {
               className={inputClass}
             />
             <label htmlFor='cf-phone' className={labelClass}>
-              Phone <span className='text-gray/70 font-normal tracking-normal normal-case text-[11px] ml-1'>(optional)</span>
+              Phone <span className='text-primary-darker/60 font-semibold tracking-normal normal-case text-[11px] ml-1'>(optional)</span>
             </label>
           </div>
 
@@ -176,7 +176,7 @@ export default function ContactForm() {
         </div>
 
         <div className='relative mt-10 flex items-center justify-between flex-wrap gap-4'>
-          <p className='text-xs text-gray font-heading uppercase tracking-[1.5px]'>
+          <p className='text-xs text-primary-darker/80 font-heading font-bold uppercase tracking-[1.5px]'>
             <span className='text-mint-dark'>*</span> Required
           </p>
 
