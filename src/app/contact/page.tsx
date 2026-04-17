@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative text-white text-center py-[80px] px-6 overflow-hidden bg-primary-darker">
+      {/* HERO + FORM — two-column */}
+      <section className="relative text-white px-6 py-16 max-md:py-12 max-md:px-4 overflow-hidden bg-primary-darker">
         <div
           className="absolute inset-0 pointer-events-none z-[1]"
           style={{
@@ -21,30 +21,28 @@ export default function ContactPage() {
             animation: "ice-sparkle 4s ease-in-out infinite",
           }}
         />
-        <div className="relative z-[2]">
-          <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/20 text-mint border border-mint/30 backdrop-blur-sm mb-4">
-            Reach Out
-          </span>
-          <h1 className="font-heading text-[clamp(40px,6vw,72px)] font-extrabold uppercase tracking-wide mb-5 leading-[1.1] max-md:text-[32px]">
-            Contact <span className="text-mint">Us</span>
-          </h1>
-          <p className="text-[clamp(17px,2vw,21px)] max-w-[680px] mx-auto leading-relaxed text-white/90 max-md:text-base">
-            Have questions about our mission? Wondering how you can get involved? Want to share your story?
-          </p>
-        </div>
-      </section>
+        <div className="relative z-[2] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-12 lg:gap-16 items-center">
+          {/* Left: hero copy */}
+          <div className="lg:pr-4">
+            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/20 text-mint border border-mint/30 backdrop-blur-sm mb-5">
+              Reach Out
+            </span>
+            <h1 className="font-heading text-[clamp(44px,6vw,80px)] font-extrabold uppercase tracking-wide mb-6 leading-[0.95] max-md:text-[40px]">
+              Contact <span className="text-mint">Us</span>
+            </h1>
+            <p className="text-[clamp(17px,1.6vw,20px)] leading-relaxed text-white/85 max-md:text-base mb-8 max-w-[520px]">
+              Have questions about our mission? Wondering how you can get involved? Want to share your story?
+            </p>
+            <div className="flex items-center gap-3 text-sm font-heading uppercase tracking-[2px] text-mint/80">
+              <span className="w-10 h-px bg-mint/50" />
+              <span>We read every message</span>
+            </div>
+          </div>
 
-      {/* MESSAGE FORM */}
-      <section className="relative py-12 px-6 max-md:py-8 max-md:px-4 bg-ice-light/15 overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(circle at 80% 0%, rgba(148,224,185,0.18) 0%, transparent 45%), radial-gradient(circle at 10% 100%, rgba(187,218,237,0.35) 0%, transparent 50%)",
-          }}
-        />
-        <div className="relative max-w-[820px] mx-auto">
-          <ContactForm />
+          {/* Right: form */}
+          <div>
+            <ContactForm />
+          </div>
         </div>
       </section>
 
