@@ -5,13 +5,13 @@ import Footer from "@/components/Footer";
 import EmailSignupModal from "@/components/EmailSignupModal";
 
 export const metadata: Metadata = {
-  title: "Save Lloyd Ice Coalition — Don't Shrink the Rink",
+  title: "Save Lloyd Ice Coalition | Don't Shrink the Rink",
   description:
-    "A coalition of skaters, parents, and coaches fighting to preserve the Lloyd Center Ice Rink — Portland's only year-round public ice facility and a beloved community landmark for 65 years.",
+    "A coalition of skaters, parents, and coaches fighting to preserve the Lloyd Center Ice Rink, Portland's only year-round public ice facility and a beloved community landmark for 65 years.",
   openGraph: {
     title: "Save Lloyd Ice Coalition",
     description:
-      "Help us preserve Portland's historic Lloyd Center Ice Rink — Oregon's only year-round public ice facility since 1960.",
+      "Help us preserve Portland's historic Lloyd Center Ice Rink, Oregon's only year-round public ice facility since 1960.",
     type: "website",
     url: "https://www.savelloydicerink.com",
   },

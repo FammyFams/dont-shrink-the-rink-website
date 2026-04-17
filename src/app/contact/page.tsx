@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Save Lloyd Ice Coalition",
+  title: "Contact Us | Save Lloyd Ice Coalition",
   description:
     "Get in touch with the Save Lloyd Ice Coalition. Reach out with questions, stories, or to get involved.",
 };
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* HERO + FORM — two-column */}
+      {/* HERO + FORM: two-column */}
       <section className="relative text-white px-6 py-16 max-md:py-12 max-md:px-4 overflow-hidden bg-primary-darker">
         <div
           className="absolute inset-0 pointer-events-none z-[1]"
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 Email Us
               </h3>
               <p className="text-body-text mb-4 text-sm">
-                Questions, press, partnerships &mdash; drop us a line anytime.
+                Questions, press, partnerships. Drop us a line anytime.
               </p>
               <a
                 href="mailto:savelloydicecoalition@gmail.com"

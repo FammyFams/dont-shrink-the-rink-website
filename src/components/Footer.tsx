@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FooterEmailSignup from "@/components/FooterEmailSignup";
 
 export default function Footer() {
   return (
@@ -54,12 +55,7 @@ export default function Footer() {
             <p className="mb-5 text-light-text/80">
               Get updates on the appeal, upcoming hearings, and ways to help.
             </p>
-            <Link
-              href="/contact"
-              className="inline-block px-8 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all"
-            >
-              Sign Up for Updates
-            </Link>
+            <FooterEmailSignup />
             <p className="text-[13px] text-gray mt-3">No spam. Only updates that matter.</p>
           </div>
         </div>
@@ -99,7 +95,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="pt-5 border-t border-white/[0.08] text-[13px] text-gray text-center">
-          &copy; 2026 Save Lloyd Ice Coalition &mdash; Don&apos;t Shrink the Rink
+          &copy; 2026 Save Lloyd Ice Coalition &middot; Don&apos;t Shrink the Rink
         </div>
       </div>
     </footer>

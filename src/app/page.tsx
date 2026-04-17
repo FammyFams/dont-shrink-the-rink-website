@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ParallaxHero from "@/components/ParallaxHero";
+import DaysUntilClose from "@/components/DaysUntilClose";
 
 export default function HomePage() {
   return (
@@ -21,8 +22,12 @@ export default function HomePage() {
         />
 
         <div className="relative z-[2] max-w-[900px] mx-auto">
-          <span className="inline-block px-5 py-2 rounded-full font-heading text-xs font-bold uppercase tracking-[3px] bg-urgent/90 text-white mb-6 animate-[fadeUp_0.8s_ease-out]">
-            Portland&apos;s Rink Is Under Threat
+          <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full font-heading text-xs font-bold uppercase tracking-[3px] bg-urgent/90 text-white mb-6 animate-[fadeUp_0.8s_ease-out]">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white/80 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
+            Breaking: Closing August 8, 2026
           </span>
           <h1 className="font-heading text-[clamp(44px,7vw,84px)] font-black uppercase tracking-wide mb-6 leading-[1.05] max-md:text-[36px] animate-[fadeUp_0.8s_ease-out]">
             They Want to
@@ -31,14 +36,36 @@ export default function HomePage() {
               Demolish Our Rink
             </span>
           </h1>
+          {/* Temporarily hidden — restore if needed:
           <p className="text-[clamp(18px,2.2vw,24px)] max-w-[720px] mx-auto mb-6 leading-relaxed text-white/95 animate-[fadeUp_0.8s_ease-out_0.15s_both] max-md:text-lg font-medium">
+            Mall owners KKR and URG set the final day: <strong className="text-mint">August 8, 2026</strong>. Then demolition begins. Rink included.
+          </p>
+          */}
+          <p className="text-[clamp(16px,1.8vw,20px)] max-w-[600px] mx-auto mb-8 text-ice-light/85 animate-[fadeUp_0.8s_ease-out_0.2s_both] max-md:text-base">
             65 years of memories. Oregon&apos;s only year-round public ice rink.
-            The first mall rink in America. And it could all be gone.
+            We&apos;re fighting back, and the clock is running.
           </p>
-          <p className="text-[clamp(16px,1.8vw,20px)] max-w-[600px] mx-auto mb-10 text-ice-light/80 animate-[fadeUp_0.8s_ease-out_0.2s_both] max-md:text-base">
-            We&apos;re fighting back. Join thousands of Portlanders demanding the city
-            protect our ice rink.
-          </p>
+
+          {/* Countdown */}
+          <div className="inline-flex items-center gap-4 mb-10 px-6 py-4 rounded-2xl bg-white/[0.07] border border-mint/25 backdrop-blur-sm animate-[fadeUp_0.8s_ease-out_0.25s_both]">
+            <div className="text-left">
+              <div className="text-[11px] font-heading uppercase tracking-[2px] text-mint/80 mb-1">
+                Time to save the rink
+              </div>
+              <div className="font-heading text-[clamp(24px,3.5vw,36px)] font-black text-white leading-none">
+                <DaysUntilClose />
+              </div>
+            </div>
+            <div className="h-10 w-px bg-white/15" aria-hidden />
+            <div className="text-left">
+              <div className="text-[11px] font-heading uppercase tracking-[2px] text-ice-light/60 mb-1">
+                Final day
+              </div>
+              <div className="font-heading text-[clamp(24px,3.5vw,36px)] font-black text-white leading-none">
+                Aug 8
+              </div>
+            </div>
+          </div>
           <div className="flex gap-4 justify-center flex-wrap animate-[fadeUp_0.8s_ease-out_0.3s_both] max-md:flex-col max-md:items-center">
             <a
               href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
@@ -58,7 +85,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHAT'S AT STAKE — emotional urgency strip */}
+      {/* WHAT'S AT STAKE */}
       <section className="bg-primary-darker text-white py-14 px-6 border-t-4 border-mint">
         <div className="max-w-[1140px] mx-auto text-center">
           <h2 className="font-heading text-[clamp(26px,3.5vw,40px)] font-extrabold uppercase tracking-wide mb-8 leading-tight">
@@ -87,7 +114,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHY THIS MATTERS — more emotional, less corporate */}
+      {/* WHY THIS MATTERS */}
       <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
         <div className="max-w-[900px] mx-auto text-center">
           <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-urgent/10 text-urgent mb-4">
@@ -104,7 +131,7 @@ export default function HomePage() {
           </p>
           <p className="text-lg max-w-[700px] mx-auto mb-8 leading-relaxed">
             Developers want to tear it down with <strong>no guaranteed replacement</strong>.
-            We&apos;re not against development &mdash; we&apos;re against losing a 65-year
+            We&apos;re not against development. We&apos;re against losing a 65-year
             community institution without a fight.
           </p>
           <div className="flex gap-4 justify-center flex-wrap max-md:flex-col max-md:items-center">
@@ -124,7 +151,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHO'S AFFECTED — community impact with urgency */}
+      {/* WHO'S AFFECTED */}
       <section className="py-20 px-6 bg-gradient-to-b from-ice-lighter to-white max-md:py-[50px] max-md:px-4">
         <div className="max-w-[1140px] mx-auto text-center">
           <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
@@ -171,7 +198,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3 WAYS TO HELP — clear action steps */}
+      {/* 3 WAYS TO HELP */}
       <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
         <div className="max-w-[1140px] mx-auto text-center">
           <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-urgent/10 text-urgent mb-4">
@@ -245,7 +272,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FINAL CTA — urgent, full-width */}
+      {/* FINAL CTA */}
       <section className="bg-gradient-to-br from-[#0a1e2a] to-primary-darker text-white py-24 px-6 text-center relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none opacity-30"
@@ -256,12 +283,13 @@ export default function HomePage() {
         />
         <div className="max-w-[800px] mx-auto relative">
           <h2 className="font-heading text-[clamp(32px,5vw,56px)] font-black uppercase tracking-wide mb-6 leading-[1.1]">
-            The Clock Is Ticking.
-            <br />
-            <span className="text-mint">Don&apos;t Let Them Shrink the Rink.</span>
+            August 8 <span className="text-mint">Is Coming.</span>
           </h2>
-          <p className="text-xl max-w-[600px] mx-auto mb-10 text-ice-light/90 leading-relaxed">
-            Once it&apos;s gone, it&apos;s gone forever. Stand with us before it&apos;s too late.
+          <p className="text-xl max-w-[600px] mx-auto mb-6 text-ice-light/90 leading-relaxed">
+            <DaysUntilClose className="text-mint font-bold" /> until the gates close. Once it&apos;s gone, it&apos;s gone forever.
+          </p>
+          <p className="text-lg max-w-[600px] mx-auto mb-10 text-ice-light/70 leading-relaxed">
+            Stand with us before it&apos;s too late.
           </p>
           <div className="flex gap-4 justify-center flex-wrap max-md:flex-col max-md:items-center">
             <a

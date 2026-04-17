@@ -3,7 +3,7 @@ import Link from "next/link";
 import InstagramEmbed from "@/components/InstagramEmbed";
 
 export const metadata: Metadata = {
-  title: "Testimonials — Save Lloyd Ice Coalition",
+  title: "Testimonials | Save Lloyd Ice Coalition",
   description:
     "Hear from the skaters, families, and community members who cherish the Lloyd Center Ice Rink.",
 };

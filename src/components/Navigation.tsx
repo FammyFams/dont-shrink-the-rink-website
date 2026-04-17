@@ -23,17 +23,15 @@ export default function Navigation() {
       <div className='bg-urgent text-white text-center py-2.5 px-4 text-sm font-semibold font-heading uppercase tracking-wider overflow-hidden relative'>
         <div className='animate-[ticker_20s_linear_infinite] whitespace-nowrap inline-block'>
           <span className='mx-8'>
-            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
+            MALL CLOSES AUGUST 8, 2026. RINK INCLUDED.
           </span>
-          <span className='mx-8'>SIGN THE PETITION</span>
+          <span className='mx-8'>APPEAL IN PROGRESS</span>
+          <span className='mx-8'>SIGN THE PETITION NOW</span>
           <span className='mx-8'>
-            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
+            MALL CLOSES AUGUST 8, 2026. RINK INCLUDED.
           </span>
-          <span className='mx-8'>SIGN THE PETITION</span>
-          <span className='mx-8'>
-            APPEAL IN PROGRESS &mdash; THE RINK NEEDS YOUR VOICE NOW
-          </span>
-          <span className='mx-8'>SIGN THE PETITION</span>
+          <span className='mx-8'>APPEAL IN PROGRESS</span>
+          <span className='mx-8'>SIGN THE PETITION NOW</span>
         </div>
       </div>
 
@@ -110,7 +108,7 @@ export default function Navigation() {
                   rel='noopener noreferrer'
                   className='block px-4 py-3.5 rounded-lg text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker text-center mt-2'
                 >
-                  Act Now &mdash; Sign the Petition
+                  Act Now: Sign the Petition
                 </a>
               </li>
             </ul>

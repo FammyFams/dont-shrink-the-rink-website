@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Take Action — Save Lloyd Ice Coalition",
+  title: "Take Action | Save Lloyd Ice Coalition",
   description:
     "Join the fight to save Lloyd Center Ice Rink. Testify before City Council, sign the petition, and make your voice heard.",
 };
@@ -115,7 +115,7 @@ export default function TakeActionPage() {
           </h2>
           <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
           <p className="max-w-[700px] mx-auto mb-4">
-            The appeal grants us a hearing with the City Council &mdash; a vital
+            The appeal grants us a hearing with the City Council, a vital
             opportunity to make the needs of the community understood. If you are available
             to testify, please take a look at the suggested categories below and let us
             know if you want to make your voice heard.

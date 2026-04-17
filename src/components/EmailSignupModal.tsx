@@ -19,7 +19,7 @@ export default function EmailSignupModal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
 
-  // Skip on /contact — the whole page is already a form
+  // Skip on /contact; the whole page is already a form
   const suppressedRoute = pathname === '/contact';
 
   useEffect(() => {
@@ -156,7 +156,7 @@ export default function EmailSignupModal() {
                 Join the <span className='text-mint-dark'>Email List</span>
               </h2>
               <p className='text-body-text mb-6 text-[15px] leading-relaxed'>
-                Get updates on the appeal, hearing dates, and the moments your voice matters most. No spam &mdash; just the calls to action that count.
+                Get updates on the appeal, hearing dates, and the moments your voice matters most. No spam. Just the calls to action that count.
               </p>
 
               <form onSubmit={handleSubmit} noValidate>

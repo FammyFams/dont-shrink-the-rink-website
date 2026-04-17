@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Mission — Save Lloyd Ice Coalition",
+  title: "Our Mission | Save Lloyd Ice Coalition",
   description:
     "We seek to preserve the Lloyd Center Ice Rink or secure a permanent, year-round replacement facility of equal quality.",
 };
@@ -47,7 +47,7 @@ export default function MissionPage() {
           <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded my-5 border-none" />
           <p className="max-w-[700px] mb-4">
             We seek to pause approval of the Lloyd Center redevelopment plan and require
-            the preservation of the ice rink &mdash; or a binding, permanent, year-round
+            the preservation of the ice rink, or a binding, permanent, year-round
             replacement facility of equal or greater quality.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function MissionPage() {
             youth sports, family recreation, adaptive athletics, and community gathering.
           </p>
           <p className="max-w-[700px] mb-4">
-            This isn&apos;t just a rink &mdash; it&apos;s a piece of Portland&apos;s
+            This isn&apos;t just a rink. It&apos;s a piece of Portland&apos;s
             identity. It&apos;s where Tonya Harding trained. Where families spend Christmas
             morning. Where first dates happen and friendships are forged on the ice.
           </p>
@@ -154,7 +154,7 @@ export default function MissionPage() {
           <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
           <p className="max-w-[700px] mx-auto mb-4">
             Whether you&apos;re a skater, a parent, a coach, or simply a Portlander who
-            values community spaces &mdash; we need you.
+            values community spaces, we need you.
           </p>
           <div className="flex gap-4 justify-center flex-wrap mt-10">
             <a

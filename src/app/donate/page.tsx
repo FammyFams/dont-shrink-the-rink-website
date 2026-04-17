@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Donate — Save Lloyd Ice Coalition",
+  title: "Donate | Save Lloyd Ice Coalition",
   description:
     "Support the fight to save Portland's Lloyd Center Ice Rink. Every contribution helps fund legal defense, community outreach, and advocacy.",
 };
