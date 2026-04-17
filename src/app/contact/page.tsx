@@ -28,112 +28,134 @@ export default function ContactPage() {
             Contact <span className="text-mint">Us</span>
           </h1>
           <p className="text-[clamp(17px,2vw,21px)] max-w-[680px] mx-auto leading-relaxed text-white/90 max-md:text-base">
-            Have questions about our mission? Wondering how you can get involved?
+            Have questions about our mission? Wondering how you can get involved? Want to share your story?
           </p>
         </div>
       </section>
 
-      {/* CONTACT CONTENT */}
-      <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
-        <div className="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[60px] items-start">
-          {/* LEFT: Contact Details */}
-          <div>
-            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
-              Get in Touch
-            </span>
-            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-              Let&apos;s Connect
-            </h2>
-            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded my-5 border-none" />
-
-            <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mt-10 mb-2 text-primary">
-              Email Us
-            </h3>
-            <p>
+      {/* CONTACT INFO CARDS */}
+      <section className="py-16 px-6 max-md:py-10 max-md:px-4 bg-ice-light/10">
+        <div className="max-w-[1140px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Email Card */}
+            <div className="bg-white rounded-2xl p-8 border-2 border-ice-light/50 hover:border-mint hover:-translate-y-1 hover:shadow-lg transition-all">
+              <div className="w-12 h-12 rounded-xl bg-mint/20 flex items-center justify-center mb-5 text-2xl">
+                &#9993;
+              </div>
+              <h3 className="font-heading text-xl font-extrabold uppercase tracking-wide mb-2 text-primary-darker">
+                Email Us
+              </h3>
+              <p className="text-light-text mb-4 text-sm">
+                Questions, press, partnerships &mdash; drop us a line anytime.
+              </p>
               <a
                 href="mailto:savelloydicecoalition@gmail.com"
-                className="text-primary hover:text-mint-dark transition-colors"
+                className="font-heading text-sm font-bold uppercase tracking-wider text-primary hover:text-mint-dark transition-colors break-all"
               >
                 savelloydicecoalition@gmail.com
               </a>
-            </p>
-
-            <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mt-10 mb-3 text-primary">
-              Follow Us
-            </h3>
-            <div className="flex gap-6 flex-wrap">
-              <a
-                href="https://instagram.com/savelloydice"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light-text font-heading text-sm uppercase tracking-[1.5px] font-semibold px-4 py-2 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://facebook.com/profile.php?id=61588089534640"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light-text font-heading text-sm uppercase tracking-[1.5px] font-semibold px-4 py-2 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
-              >
-                Facebook
-              </a>
-              <a
-                href="https://bsky.app/profile/savelloydice.bsky.social"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light-text font-heading text-sm uppercase tracking-[1.5px] font-semibold px-4 py-2 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
-              >
-                Bluesky
-              </a>
             </div>
 
-            <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mt-10 mb-2 text-primary">
-              Want to Testify?
-            </h3>
-            <p>
-              If you want to share your story at the City Council hearing, head to our{" "}
-              <Link href="/take-action" className="text-primary font-semibold hover:text-mint-dark transition-colors underline">
-                Take Action
-              </Link>{" "}
-              page.
-            </p>
-          </div>
+            {/* Social Card */}
+            <div className="bg-white rounded-2xl p-8 border-2 border-ice-light/50 hover:border-mint hover:-translate-y-1 hover:shadow-lg transition-all">
+              <div className="w-12 h-12 rounded-xl bg-mint/20 flex items-center justify-center mb-5 text-2xl">
+                &#9733;
+              </div>
+              <h3 className="font-heading text-xl font-extrabold uppercase tracking-wide mb-2 text-primary-darker">
+                Follow the Fight
+              </h3>
+              <p className="text-light-text mb-4 text-sm">
+                Live updates on the appeal, hearings, and community actions.
+              </p>
+              <div className="flex gap-2 flex-wrap">
+                <a
+                  href="https://instagram.com/savelloydice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-xs uppercase tracking-[1.5px] font-semibold px-3 py-1.5 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://facebook.com/profile.php?id=61588089534640"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-xs uppercase tracking-[1.5px] font-semibold px-3 py-1.5 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://bsky.app/profile/savelloydice.bsky.social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-xs uppercase tracking-[1.5px] font-semibold px-3 py-1.5 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
+                >
+                  Bluesky
+                </a>
+              </div>
+            </div>
 
-          {/* RIGHT: Contact Form */}
-          <div>
+            {/* Testify Card */}
+            <div className="bg-gradient-to-br from-primary to-primary-darker text-white rounded-2xl p-8 border-2 border-transparent hover:-translate-y-1 hover:shadow-lg transition-all">
+              <div className="w-12 h-12 rounded-xl bg-mint/25 flex items-center justify-center mb-5 text-2xl">
+                &#128226;
+              </div>
+              <h3 className="font-heading text-xl font-extrabold uppercase tracking-wide mb-2">
+                Want to Testify?
+              </h3>
+              <p className="text-white/80 mb-4 text-sm">
+                Share your rink story at the City Council hearing. We&apos;ll help you prep.
+              </p>
+              <Link
+                href="/take-action"
+                className="inline-flex items-center gap-2 font-heading text-sm font-bold uppercase tracking-wider text-mint hover:text-white transition-colors"
+              >
+                Take Action <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MESSAGE FORM */}
+      <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
+        <div className="max-w-[820px] mx-auto">
+          <div className="text-center mb-10">
             <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
               Send a Message
             </span>
             <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-              Drop Us a Line
+              Drop Us a <span className="text-mint-dark">Line</span>
             </h2>
-            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded my-5 border-none" />
-
-            <div className="mt-6 rounded-xl overflow-hidden border-2 border-ice-light bg-white">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
-                width="100%"
-                height="900"
-                className="w-full block"
-                title="Contact Save Lloyd Ice Coalition"
-              >
-                Loading&hellip;
-              </iframe>
-            </div>
-            <p className="text-sm text-gray mt-3">
-              Having trouble?{" "}
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
-              >
-                Open the form in a new tab
-              </a>
-              .
+            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
+            <p className="text-light-text max-w-[560px] mx-auto">
+              Tell us who you are and how you&apos;d like to help &mdash; or just ask a question. We read every message.
             </p>
           </div>
+
+          <div className="rounded-2xl overflow-hidden border-2 border-ice-light bg-white shadow-[0_20px_60px_-20px_rgba(43,96,128,0.25)]">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
+              width="100%"
+              height="1100"
+              className="w-full block"
+              title="Contact Save Lloyd Ice Coalition"
+            >
+              Loading&hellip;
+            </iframe>
+          </div>
+          <p className="text-sm text-gray mt-4 text-center">
+            Form not loading?{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
+            >
+              Open it in a new tab
+            </a>
+            .
+          </p>
         </div>
       </section>
     </>
