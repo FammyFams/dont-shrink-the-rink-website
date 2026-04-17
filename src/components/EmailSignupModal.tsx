@@ -35,6 +35,15 @@ export default function EmailSignupModal() {
     return () => window.clearTimeout(t);
   }, [suppressedRoute]);
 
+  useEffect(() => {
+    const onOpen = () => {
+      setStatus('idle');
+      setOpen(true);
+    };
+    window.addEventListener('open-email-modal', onOpen);
+    return () => window.removeEventListener('open-email-modal', onOpen);
+  }, []);
+
   // Focus, scroll lock, Esc to close
   useEffect(() => {
     if (!open) return;

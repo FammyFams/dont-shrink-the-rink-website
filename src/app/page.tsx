@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ParallaxHero from "@/components/ParallaxHero";
 import DaysUntilClose from "@/components/DaysUntilClose";
+import JoinEmailListButton from "@/components/JoinEmailListButton";
 
 export default function HomePage() {
   return (
@@ -81,6 +82,9 @@ export default function HomePage() {
             >
               Fund the Fight
             </Link>
+            <JoinEmailListButton className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-white/10 text-white border-2 border-white/80 hover:bg-white hover:text-primary-darker hover:-translate-y-[3px] hover:shadow-lg transition-all max-md:w-full max-md:max-w-[340px] max-md:text-center">
+              Join the Email List
+            </JoinEmailListButton>
           </div>
         </div>
       </section>
