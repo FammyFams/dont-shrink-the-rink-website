@@ -20,7 +20,15 @@
       "Bash(gh api:*)",
       "Bash(where gh:*)",
       "Bash(find \"A:\\\\Users\\\\matth\\\\Desktop\\\\obsidian brain\\\\Daily Notes\" -type f -name \"*.md\" -exec grep -l \"rink\\\\|lloyd\\\\|shrink\\\\|ice\\\\|skating\\\\|SLIC\\\\|coalition\" {} \\\\;)",
-      "Bash(find \"A:\\\\Users\\\\matth\\\\Desktop\\\\obsidian brain\" -type f \\\\\\( -name \"*.md\" -o -name \"*.txt\" \\\\\\) ! -path \"*/.obsidian/*\" ! -path \"*/.agents/*\" ! -path \"*/.claude/*\" ! -path \"*/Excalidraw/Scripts/*\" ! -path \"*/Templates/*\" -exec grep -l \"lloyd\\\\|rink\\\\|shrink\\\\|ice.*rink\\\\|save.*lloyd\\\\|coalition\" {} \\\\;)"
+      "Bash(find \"A:\\\\Users\\\\matth\\\\Desktop\\\\obsidian brain\" -type f \\\\\\( -name \"*.md\" -o -name \"*.txt\" \\\\\\) ! -path \"*/.obsidian/*\" ! -path \"*/.agents/*\" ! -path \"*/.claude/*\" ! -path \"*/Excalidraw/Scripts/*\" ! -path \"*/Templates/*\" -exec grep -l \"lloyd\\\\|rink\\\\|shrink\\\\|ice.*rink\\\\|save.*lloyd\\\\|coalition\" {} \\\\;)",
+      "Bash(curl -s -L \"https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform\" -o /tmp/gform.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -L \"https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform\" -o gform-raw.html)",
+      "Read(//c/Users/matth/.claude/skills/**)",
+      "Read(//c/Users/matth/.claude/plugins/**)",
+      "Bash(which python3 *)",
+      "Bash(node --version)",
+      "Bash(node parse-gform.mjs)"
     ]
   }
 }

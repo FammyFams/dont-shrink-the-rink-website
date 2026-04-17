@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us — Save Lloyd Ice Coalition",
@@ -43,32 +44,7 @@ export default function ContactPage() {
           }}
         />
         <div className="relative max-w-[820px] mx-auto">
-          {/* Gradient frame — gives the embed a branded edge without touching Google's internal styles */}
-          <div className="p-[3px] rounded-[20px] bg-gradient-to-br from-primary via-mint to-ice-light shadow-[0_30px_80px_-25px_rgba(43,96,128,0.4)]">
-            <div className="rounded-[17px] overflow-hidden bg-white">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
-                width="100%"
-                height="1100"
-                className="w-full block"
-                title="Contact Save Lloyd Ice Coalition"
-              >
-                Loading&hellip;
-              </iframe>
-            </div>
-          </div>
-          <p className="text-sm text-gray mt-4 text-center">
-            Form not loading?{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
-            >
-              Open it in a new tab
-            </a>
-            .
-          </p>
+          <ContactForm />
         </div>
       </section>
 
