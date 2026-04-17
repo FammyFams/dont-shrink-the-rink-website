@@ -33,9 +33,66 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* MESSAGE FORM */}
+      <section className="relative py-20 px-6 max-md:py-[50px] max-md:px-4 bg-ice-light/15 overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle at 80% 0%, rgba(148,224,185,0.18) 0%, transparent 45%), radial-gradient(circle at 10% 100%, rgba(187,218,237,0.35) 0%, transparent 50%)",
+          }}
+        />
+        <div className="relative max-w-[820px] mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
+              Send a Message
+            </span>
+            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
+              Drop Us a <span className="text-mint-dark">Line</span>
+            </h2>
+            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
+            <p className="text-body-text max-w-[560px] mx-auto">
+              Tell us who you are and how you&apos;d like to help &mdash; or just ask a question. We read every message.
+            </p>
+          </div>
+
+          {/* Gradient frame — gives the embed a branded edge without touching Google's internal styles */}
+          <div className="p-[3px] rounded-[20px] bg-gradient-to-br from-primary via-mint to-ice-light shadow-[0_30px_80px_-25px_rgba(43,96,128,0.4)]">
+            <div className="rounded-[17px] overflow-hidden bg-white">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
+                width="100%"
+                height="1100"
+                className="w-full block"
+                title="Contact Save Lloyd Ice Coalition"
+              >
+                Loading&hellip;
+              </iframe>
+            </div>
+          </div>
+          <p className="text-sm text-gray mt-4 text-center">
+            Form not loading?{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
+            >
+              Open it in a new tab
+            </a>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* CONTACT INFO CARDS */}
-      <section className="py-16 px-6 max-md:py-10 max-md:px-4 bg-ice-light/10">
+      <section className="py-16 px-6 max-md:py-10 max-md:px-4">
         <div className="max-w-[1140px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="font-heading text-[clamp(26px,3vw,36px)] font-extrabold uppercase tracking-wide text-primary-darker">
+              Other Ways to <span className="text-mint-dark">Reach Us</span>
+            </h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Email Card */}
             <div className="bg-white rounded-2xl p-8 border-2 border-ice-light/50 hover:border-mint hover:-translate-y-1 hover:shadow-lg transition-all">
@@ -114,48 +171,6 @@ export default function ContactPage() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* MESSAGE FORM */}
-      <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
-        <div className="max-w-[820px] mx-auto">
-          <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
-              Send a Message
-            </span>
-            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-              Drop Us a <span className="text-mint-dark">Line</span>
-            </h2>
-            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-            <p className="text-body-text max-w-[560px] mx-auto">
-              Tell us who you are and how you&apos;d like to help &mdash; or just ask a question. We read every message.
-            </p>
-          </div>
-
-          <div className="rounded-2xl overflow-hidden border-2 border-ice-light bg-white shadow-[0_20px_60px_-20px_rgba(43,96,128,0.25)]">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform?embedded=true"
-              width="100%"
-              height="1100"
-              className="w-full block"
-              title="Contact Save Lloyd Ice Coalition"
-            >
-              Loading&hellip;
-            </iframe>
-          </div>
-          <p className="text-sm text-gray mt-4 text-center">
-            Form not loading?{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary font-semibold hover:text-mint-dark transition-colors underline"
-            >
-              Open it in a new tab
-            </a>
-            .
-          </p>
         </div>
       </section>
     </>
