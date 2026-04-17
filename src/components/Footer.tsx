@@ -54,14 +54,12 @@ export default function Footer() {
             <p className="mb-5 text-light-text/80">
               Get updates on the appeal, upcoming hearings, and ways to help.
             </p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe6lboKTtuGXbDgXBMO05smR0e_-kWYnE7qR9_Og-52Pzehpg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="inline-block px-8 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-0.5 transition-all"
             >
               Sign Up for Updates
-            </a>
+            </Link>
             <p className="text-[13px] text-gray mt-3">No spam. Only updates that matter.</p>
           </div>
         </div>
