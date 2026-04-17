@@ -44,6 +44,11 @@ const testimonials = [
     description: "Sharing why the Lloyd Center Ice Rink matters to her.",
     reelId: "DU36FmOEsfn",
   },
+  {
+    name: "Ella & Ada",
+    description: "Two skaters speaking up for the rink they love.",
+    reelId: "DVLJyFFCows",
+  },
 ];
 
 export default function TestimonialsPage() {
