@@ -95,6 +95,22 @@ export default function Footer() {
             >
               Bluesky
             </a>
+            <a
+              href='https://discord.gg/snjVEvCnx4'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-light-text font-heading text-sm uppercase tracking-[1.5px] font-semibold px-4 py-2 rounded-lg border border-white/10 hover:text-white hover:bg-mint/15 hover:border-mint transition-all'
+            >
+              Discord
+            </a>
+            <a
+              href='https://www.tiktok.com/@save.lloyd.ice.co'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-light-text font-heading text-sm uppercase tracking-[1.5px] font-semibold px-4 py-2 rounded-lg border border-white/10 hover:text-white hover:bg-mint/15 hover:border-mint transition-all'
+            >
+              TikTok
+            </a>
           </div>
           <a
             href='mailto:savelloydicecoalition@gmail.com'

@@ -110,6 +110,22 @@ export default function ContactPage() {
                 >
                   Bluesky
                 </a>
+                <a
+                  href="https://discord.gg/snjVEvCnx4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-xs uppercase tracking-[1.5px] font-semibold px-3 py-1.5 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
+                >
+                  Discord
+                </a>
+                <a
+                  href="https://www.tiktok.com/@save.lloyd.ice.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-xs uppercase tracking-[1.5px] font-semibold px-3 py-1.5 rounded-lg border border-primary/20 text-primary hover:bg-mint/15 hover:border-mint transition-all"
+                >
+                  TikTok
+                </a>
               </div>
             </div>
 
