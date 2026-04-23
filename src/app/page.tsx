@@ -43,7 +43,7 @@ export default function HomePage() {
           </p>
           */}
           <p className="text-[clamp(16px,1.8vw,20px)] max-w-[600px] mx-auto mb-8 text-ice-light/85 animate-[fadeUp_0.8s_ease-out_0.2s_both] max-md:text-base">
-            65 years of memories. Oregon&apos;s only year-round public ice rink.
+            65 years of memories. Portland&apos;s only year-round public ice rink.
             We&apos;re fighting back, and the clock is running.
           </p>
 

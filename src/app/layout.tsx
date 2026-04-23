@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Save Lloyd Ice Coalition",
     description:
-      "Help us preserve Portland's historic Lloyd Center Ice Rink, Oregon's only year-round public ice facility since 1960.",
+      "Help us preserve Portland's historic Lloyd Center Ice Rink, the city's only year-round public ice facility since 1960.",
     type: "website",
     url: "https://www.savelloydicerink.com",
   },
