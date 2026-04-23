@@ -9,11 +9,68 @@ export const metadata: Metadata = {
 
 const BONFIRE_URL = "https://www.bonfire.com/store/save-lloyd-ice-coalition/";
 
+const PRODUCTS: {
+  title: string;
+  startingPrice: string;
+  url: string;
+  image: string;
+}[] = [
+  {
+    title: "SLIC Colorful Tee",
+    startingPrice: "$27.99",
+    url: "https://www.bonfire.com/save-lloyd-ice-coalition/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/ac059149-ec38-4022-846d-17d9b0768433/7b489af5-8343-4ffe-8c9a-9af756785c8b/900/",
+  },
+  {
+    title: "SLIC White Tee",
+    startingPrice: "$27.99",
+    url: "https://www.bonfire.com/slic-white-tees/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/ef59a727-d4a3-473a-92c3-cc5abce34892/e4213c53-8052-4c44-ad64-9d06f2cda5e3/900/",
+  },
+  {
+    title: "Keep Skating Weird Tee",
+    startingPrice: "$24.99",
+    url: "https://www.bonfire.com/keep-skating-weird-tee/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/5ab93a87-2132-426a-873a-346e09791f96/b2b20823-8669-43b2-ab74-7eab5a447081/900/",
+  },
+  {
+    title: "SLIC Hoodie Navy",
+    startingPrice: "$39.99",
+    url: "https://www.bonfire.com/slic-hoodie-navy/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/fabd3278-9994-43f2-84f6-cde93d800758/65b7e74e-e7d0-4f9f-86bb-7121d341a450/900/",
+  },
+  {
+    title: "SLIC Hoodie Light",
+    startingPrice: "$39.99",
+    url: "https://www.bonfire.com/slic-hoodie-light/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/0644e47a-e829-4687-85a1-6f4c8348c187/e3c67090-1516-4e66-91be-0012bd4a5e2d/900/",
+  },
+  {
+    title: "SLIC Water Bottle",
+    startingPrice: "$30.99",
+    url: "https://www.bonfire.com/slic-water-bottle/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/31e55bb3-84b9-485d-8dae-d1ad1bf8cbdf/7b6b68e9-16c5-489e-864f-2c379ca795a9/900/",
+  },
+  {
+    title: "SLIC Tote",
+    startingPrice: "$25.99",
+    url: "https://www.bonfire.com/slic-tote/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/a55543b6-348d-464c-a6aa-fe2286a857ae/9e660e8c-5be8-4ece-8122-870cb348573e/900/",
+  },
+];
+
 export default function StorePage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative text-white text-center py-[120px] px-6 overflow-hidden bg-gradient-to-br from-primary-darker via-primary-dark to-primary-darker max-md:py-[80px]">
+      {/* HERO + PRODUCT GRID */}
+      <section className="relative text-white px-6 pt-[60px] pb-20 overflow-hidden bg-gradient-to-br from-primary-darker via-primary-dark to-primary-darker max-md:pt-10 max-md:pb-[50px] max-md:px-4">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -21,27 +78,69 @@ export default function StorePage() {
               "radial-gradient(ellipse at 30% 70%, rgba(148,224,185,0.1), transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(187,218,237,0.1), transparent 50%)",
           }}
         />
-        <div className="relative">
-          <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/20 text-mint border border-mint/30 backdrop-blur-sm mb-4">
-            Support the Cause
-          </span>
-          <h1 className="font-heading text-[clamp(36px,5vw,60px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.1] max-md:text-[30px]">
-            Wear the Fight.
-            <br />
-            <span className="text-mint">Save the Rink.</span>
-          </h1>
-          <p className="text-xl max-w-[580px] mx-auto mb-8">
-            Every purchase helps fund legal defense and advocacy for Portland&apos;s
-            only year-round ice rink.
-          </p>
-          <a
-            href={BONFIRE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-9 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] hover:shadow-lg transition-all relative overflow-hidden"
-          >
-            Shop on Bonfire &rarr;
-          </a>
+        <div className="relative max-w-[1140px] mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/20 text-mint border border-mint/30 backdrop-blur-sm mb-4">
+              Support the Cause
+            </span>
+            <h1 className="font-heading text-[clamp(36px,5vw,60px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.1] max-md:text-[30px]">
+              Wear the Fight.
+              <br />
+              <span className="text-mint">Save the Rink.</span>
+            </h1>
+            <p className="text-xl max-w-[580px] mx-auto max-md:text-base">
+              Every purchase helps fund legal defense and advocacy for Portland&apos;s
+              only year-round ice rink.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {PRODUCTS.map((product) => (
+              <a
+                key={product.url}
+                href={product.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:-translate-y-1.5 hover:shadow-[0_12px_35px_rgba(0,0,0,0.3)] transition-all flex flex-col"
+              >
+                <div className="relative aspect-square bg-ice-light/30 overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-5 flex-1 flex flex-col">
+                  <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-primary-darker leading-tight mb-2">
+                    {product.title}
+                  </h3>
+                  <div className="mt-auto flex items-baseline justify-between gap-2">
+                    <span className="text-body-text text-sm">
+                      From{" "}
+                      <span className="font-bold text-primary-darker">
+                        {product.startingPrice}
+                      </span>
+                    </span>
+                    <span className="font-heading text-xs font-bold uppercase tracking-wider text-primary group-hover:text-mint-dark transition-colors">
+                      Shop &rarr;
+                    </span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href={BONFIRE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-heading text-sm font-bold uppercase tracking-wider text-mint hover:text-mint-dark underline underline-offset-4 decoration-mint/50 hover:decoration-mint-dark transition-colors"
+            >
+              Browse the full store on Bonfire &rarr;
+            </a>
+          </div>
         </div>
       </section>
 
