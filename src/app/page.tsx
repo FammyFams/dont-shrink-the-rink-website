@@ -215,9 +215,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-10">
             {/* Sign */}
-            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden flex flex-col">
               <span className="font-heading text-[72px] font-black text-mint/20 absolute top-4 right-6 leading-none">1</span>
-              <div className="relative">
+              <div className="relative flex flex-col flex-1">
                 <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mb-3 text-mint">
                   Sign
                 </h3>
@@ -228,7 +228,7 @@ export default function HomePage() {
                   href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
+                  className="mt-auto inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
                 >
                   Sign the Petition &rarr;
                 </a>
@@ -236,9 +236,9 @@ export default function HomePage() {
             </div>
 
             {/* Donate */}
-            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden flex flex-col">
               <span className="font-heading text-[72px] font-black text-mint/20 absolute top-4 right-6 leading-none">2</span>
-              <div className="relative">
+              <div className="relative flex flex-col flex-1">
                 <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mb-3 text-mint">
                   Donate
                 </h3>
@@ -247,7 +247,7 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/donate"
-                  className="inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
+                  className="mt-auto inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
                 >
                   Donate Now &rarr;
                 </Link>
@@ -255,9 +255,9 @@ export default function HomePage() {
             </div>
 
             {/* Speak */}
-            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden">
+            <div className="bg-gradient-to-br from-primary-darker to-primary-dark rounded-2xl p-9 text-center text-white relative overflow-hidden flex flex-col">
               <span className="font-heading text-[72px] font-black text-mint/20 absolute top-4 right-6 leading-none">3</span>
-              <div className="relative">
+              <div className="relative flex flex-col flex-1">
                 <h3 className="font-heading text-2xl font-bold uppercase tracking-wide mb-3 text-mint">
                   Speak Up
                 </h3>
@@ -266,7 +266,7 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/take-action"
-                  className="inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
+                  className="mt-auto inline-block w-full px-6 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[2px] transition-all"
                 >
                   Get Involved &rarr;
                 </Link>
