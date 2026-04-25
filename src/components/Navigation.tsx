@@ -8,6 +8,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/take-action', label: 'Take Action' },
   { href: '/mission', label: 'Mission' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/testimonials', label: 'Voices' },
   { href: '/donate', label: 'Donate' },
   { href: '/store', label: 'Store' },
