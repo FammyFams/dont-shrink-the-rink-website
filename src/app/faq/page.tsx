@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JoinEmailListButton from "@/components/JoinEmailListButton";
 
 export const metadata: Metadata = {
   title: "FAQ | Save Lloyd Ice Coalition",
@@ -31,37 +32,28 @@ const faqs = [
   {
     q: "Why not just go to one of the surrounding rinks?",
     a: (
-      <>
-        <p className="mb-4">
-          Other rinks in the metro area are more difficult to access for a
-          variety of reasons.
-        </p>
-        <ul className="list-disc pl-6 space-y-3 marker:text-primary">
-          <li>
-            They are not centrally located or served by transit, so skaters and
-            skating families need access to private transportation.
-          </li>
-          <li>
-            All three surrounding rinks charge more for ice time than the Lloyd
-            rink, putting skating out of reach for low-income families.
-          </li>
-          <li>
-            There is limited ice time for public skating and for other types of
-            skating practice.
-          </li>
-        </ul>
-      </>
+      <p>
+        Other rinks in the area are less accessible for Portland skaters in
+        terms of cost, location/transit, and scheduling. And we have an
+        established and growing community of coaches, staff, and hundreds of
+        regular skaters taking lessons and keeping our rink busy 7 days a
+        week; it&apos;s not possible to just pack up and merge with another
+        busy facility.
+      </p>
     ),
   },
   {
     q: "The closure date is set. Isn't it too late?",
     a: (
       <p>
-        We have filed an appeal with the city because we believe the master plan
-        as approved overlooks key details that form the basis of our legal
-        argument. Our hope is that it is not too late to work with the city and
+        We have filed an appeal with the city because we believe the master
+        plan as approved leaves out a few key details.{" "}
+        <em className="text-primary-darker/80">
+          [Details of legal argument here.]
+        </em>{" "}
+        Our hope is that it is not too late to work with the city and
         developers to identify a solution that keeps skating accessible in the
-        Lloyd district, or at least within the city of Portland.
+        Lloyd district or at least within the city of Portland.
       </p>
     ),
   },
@@ -69,11 +61,11 @@ const faqs = [
     q: "Why not just build a new rink?",
     a: (
       <p>
-        We might! It depends on a lot of factors, including the funding we are
-        able to identify, the partnerships we are able to build, and the
-        connections we&apos;re able to make with those interested in keeping a
-        rink in Portland. But rinks are expensive to operate, and it will take
-        a lot of effort to stand a new one up.
+        We are exploring all options! It depends on a lot of factors including
+        the funding we are able to identify, partnerships we are able to
+        build, and connections we&apos;re able to make with those interested
+        in keeping a rink in Portland. This is a huge project and will take a
+        significant amount of time and community effort to succeed.
       </p>
     ),
   },
@@ -85,8 +77,47 @@ const faqs = [
         organization called the{" "}
         <strong>Bridgetown Ice Skating Collective</strong>. Our funding model
         will allow us to pursue a variety of funding sources. Funders have
-        begun to express interest, and we will also need your help to raise
-        the funds for our next Portland rink.
+        begun to express interest; we will also need your help to raise the
+        funds for our next Portland rink.
+      </p>
+    ),
+  },
+  {
+    q: "How can I get involved with SLIC?",
+    a: (
+      <p>
+        There are lots of ways you can support SLIC. Subscribe to our{" "}
+        <JoinEmailListButton className="text-primary font-semibold underline decoration-mint decoration-2 underline-offset-4 hover:text-primary-darker transition-colors">
+          email list
+        </JoinEmailListButton>{" "}
+        to stay in the loop and get updates on events, progress, and volunteer
+        opportunities. Sign our{" "}
+        <a
+          href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary font-semibold underline decoration-mint decoration-2 underline-offset-4 hover:text-primary-darker transition-colors"
+        >
+          petition
+        </a>
+        , give to our{" "}
+        <a
+          href="https://www.gofundme.com/f/save-lloyd-ice-rink"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary font-semibold underline decoration-mint decoration-2 underline-offset-4 hover:text-primary-darker transition-colors"
+        >
+          GoFundMe
+        </a>
+        , and share with friends and family. Visit the{" "}
+        <Link
+          href="/take-action"
+          className="text-primary font-semibold underline decoration-mint decoration-2 underline-offset-4 hover:text-primary-darker transition-colors"
+        >
+          &ldquo;Take Action&rdquo;
+        </Link>{" "}
+        tab for more information on our upcoming appeal and FAQs for
+        testifying.
       </p>
     ),
   },
