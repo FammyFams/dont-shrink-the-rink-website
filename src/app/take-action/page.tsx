@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import TestimonyInterestForm from "@/components/TestimonyInterestForm";
 
 export const metadata: Metadata = {
@@ -203,22 +202,26 @@ export default function TakeActionPage() {
         </div>
       </section>
 
-      {/* HEARING INFO */}
-      <section className="py-20 px-6 text-center max-md:py-[50px] max-md:px-4">
-        <div className="max-w-[1140px] mx-auto">
-          <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
-            City Council Hearing
-          </span>
-          <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-            Your Voice Matters
-          </h2>
-          <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-          <p className="max-w-[700px] mx-auto mb-4">
-            The appeal grants us a hearing with the City Council, a vital
-            opportunity to make the needs of the community understood. If you are available
-            to testify, please take a look at the suggested categories below and let us
-            know if you want to make your voice heard.
-          </p>
+      {/* HEARING INFO + TESTIMONY INTEREST FORM */}
+      <section className="py-20 px-6 max-md:py-[50px] max-md:px-4">
+        <div className="max-w-[920px] mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-primary/[0.08] text-primary mb-4">
+              City Council Hearing
+            </span>
+            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
+              Your Voice Matters
+            </h2>
+            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
+            <p className="max-w-[700px] mx-auto text-[17px] leading-[1.7]">
+              The appeal grants us a hearing with the City Council, a vital
+              opportunity to make the needs of the community understood. SLIC
+              is asking who plans to testify so we can coordinate speakers,
+              ensure all key topics are covered, and group similar testimonies
+              back-to-back during the hearing.
+            </p>
+          </div>
+          <TestimonyInterestForm />
         </div>
       </section>
 
@@ -302,51 +305,6 @@ export default function TakeActionPage() {
         </div>
       </section>
 
-      {/* TESTIMONY INTEREST FORM */}
-      <section className="py-20 px-6 bg-white max-md:py-[50px] max-md:px-4">
-        <div className="max-w-[920px] mx-auto">
-          <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/15 text-primary-darker border border-mint/30 mb-4">
-              Testimony Interest Form
-            </span>
-            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
-              Tell Us You&apos;re <span className="text-mint-dark">In</span>
-            </h2>
-            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-            <p className="max-w-[680px] mx-auto text-[17px] leading-[1.7]">
-              SLIC is asking who plans to testify so we can coordinate speakers,
-              ensure all key topics are covered, and group similar testimonies
-              back-to-back during the hearing.
-            </p>
-          </div>
-          <TestimonyInterestForm />
-        </div>
-      </section>
-
-      {/* CTA: TESTIMONY FORM */}
-      <section className="bg-gradient-to-br from-primary-darker to-primary-dark text-white py-20 px-6 text-center">
-        <div className="max-w-[1140px] mx-auto">
-          <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/20 text-mint border border-mint/30 mb-4">
-            Take the Next Step
-          </span>
-          <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-white">
-            Ready to Make Your
-            <br />
-            <span className="text-mint">Voice Heard?</span>
-          </h2>
-          <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
-          <p className="max-w-[700px] mx-auto mb-4">
-            Fill out our form and let us know if you intend to testify, what category
-            speaks to you, and how we can help you prepare.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block mt-10 px-9 py-4 rounded-xl text-[15px] font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] hover:shadow-lg transition-all"
-          >
-            Testimony Interest Form &rarr;
-          </Link>
-        </div>
-      </section>
     </>
   );
 }
