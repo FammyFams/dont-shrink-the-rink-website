@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TestimonyInterestForm from "@/components/TestimonyInterestForm";
 
 export const metadata: Metadata = {
   title: "Take Action | Save Lloyd Ice Coalition",
@@ -298,6 +299,27 @@ export default function TakeActionPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* TESTIMONY INTEREST FORM */}
+      <section className="py-20 px-6 bg-white max-md:py-[50px] max-md:px-4">
+        <div className="max-w-[920px] mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full font-heading text-xs font-bold uppercase tracking-[2px] bg-mint/15 text-primary-darker border border-mint/30 mb-4">
+              Testimony Interest Form
+            </span>
+            <h2 className="font-heading text-[clamp(30px,4vw,48px)] font-extrabold uppercase tracking-wide mb-4 leading-[1.15] text-primary-darker">
+              Tell Us You&apos;re <span className="text-mint-dark">In</span>
+            </h2>
+            <hr className="w-[60px] h-1 bg-gradient-to-r from-primary to-mint rounded mx-auto my-5 border-none" />
+            <p className="max-w-[680px] mx-auto text-[17px] leading-[1.7]">
+              SLIC is asking who plans to testify so we can coordinate speakers,
+              ensure all key topics are covered, and group similar testimonies
+              back-to-back during the hearing.
+            </p>
+          </div>
+          <TestimonyInterestForm />
         </div>
       </section>
 
