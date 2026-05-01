@@ -51,6 +51,13 @@ const PRODUCTS: {
       "https://c.bonfireassets.com/thumb/design-image/0644e47a-e829-4687-85a1-6f4c8348c187/e3c67090-1516-4e66-91be-0012bd4a5e2d/900/",
   },
   {
+    title: "SLIC Zip Up",
+    startingPrice: "$49.99",
+    url: "https://www.bonfire.com/slic-zip-up/",
+    image:
+      "https://c.bonfireassets.com/thumb/design-image/114b5898-5088-42a9-9b8f-4bcc85bab8f3/d566df04-4839-4baa-bb88-63d30870fd0b/900/",
+  },
+  {
     title: "SLIC Water Bottle",
     startingPrice: "$30.99",
     url: "https://www.bonfire.com/slic-water-bottle/",
