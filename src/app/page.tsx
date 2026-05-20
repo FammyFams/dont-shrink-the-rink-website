@@ -68,23 +68,23 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex gap-4 justify-center flex-wrap animate-[fadeUp_0.8s_ease-out_0.3s_both] max-md:flex-col max-md:items-center">
-            <a
-              href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] transition-all animate-[pulse-glow_2s_ease-in-out_infinite] max-md:w-full max-md:max-w-[340px] max-md:text-center"
-            >
-              Sign the Petition Now
-            </a>
             <Link
               href="/donate"
-              className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-white/10 text-white border-2 border-white/80 hover:bg-white hover:text-primary-darker hover:-translate-y-[3px] hover:shadow-lg transition-all max-md:w-full max-md:max-w-[340px] max-md:text-center"
+              className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] transition-all animate-[pulse-glow_2s_ease-in-out_infinite] max-md:w-full max-md:max-w-[340px] max-md:text-center"
             >
               Fund the Fight
             </Link>
             <JoinEmailListButton className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-white/10 text-white border-2 border-white/80 hover:bg-white hover:text-primary-darker hover:-translate-y-[3px] hover:shadow-lg transition-all max-md:w-full max-md:max-w-[340px] max-md:text-center">
               Join the Email List
             </JoinEmailListButton>
+            <a
+              href="https://www.change.org/p/save-the-lloyd-center-ice-rink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-white/10 text-white border-2 border-white/80 hover:bg-white hover:text-primary-darker hover:-translate-y-[3px] hover:shadow-lg transition-all max-md:w-full max-md:max-w-[340px] max-md:text-center"
+            >
+              Sign the Petition
+            </a>
           </div>
         </div>
       </section>
