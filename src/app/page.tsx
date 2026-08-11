@@ -15,14 +15,8 @@ export default function HomePage() {
           Lloyd Center Ice Rink is permanently closed.
         </p>
         <hr className="w-[60px] h-1 bg-mint rounded mx-auto mb-10 border-none" />
-        <p className="text-lg text-white/85 leading-relaxed mb-4">
-          Sixty-five years of memories, gone. Thank you to everyone who signed the
-          petition, donated, testified before City Council, and showed up for a rink
-          that gave so much to this city.
-        </p>
         <p className="text-lg text-white/85 leading-relaxed mb-10">
-          We couldn&apos;t save it, but we&apos;re grateful we didn&apos;t let it go
-          without a fight. Thank you, Save Lloyd Ice Coalition.
+          Thank you everyone for the support. Check out our new link below.
         </p>
         <a
           href="https://www.bridgetowniceskatingcollective.org/"
