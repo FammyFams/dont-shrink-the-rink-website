@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import EmailSignupModal from "@/components/EmailSignupModal";
 
 export const metadata: Metadata = {
   title: "Save Lloyd Ice Coalition",
   description:
-    "A coalition of skaters, parents, and coaches fighting to preserve the Lloyd Center Ice Rink, Portland's only year-round public ice facility and a beloved community landmark for 65 years.",
+    "The fight to save Portland's Lloyd Center Ice Rink is over. Thank you to everyone who signed, donated, testified, and showed up.",
   openGraph: {
     title: "Save Lloyd Ice Coalition",
     description:
-      "Help us preserve Portland's historic Lloyd Center Ice Rink, the city's only year-round public ice facility since 1960.",
+      "The fight to save Portland's Lloyd Center Ice Rink is over. Thank you to everyone who signed, donated, testified, and showed up.",
     type: "website",
     url: "https://www.savelloydicerink.com",
   },
@@ -26,10 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col font-body text-body-text">
-        <Navigation />
         <main className="flex-1">{children}</main>
-        <Footer />
-        <EmailSignupModal />
       </body>
       <GoogleAnalytics gaId="G-QE326BSY3K" />
     </html>
