@@ -20,10 +20,18 @@ export default function HomePage() {
           petition, donated, testified before City Council, and showed up for a rink
           that gave so much to this city.
         </p>
-        <p className="text-lg text-white/85 leading-relaxed">
+        <p className="text-lg text-white/85 leading-relaxed mb-10">
           We couldn&apos;t save it, but we&apos;re grateful we didn&apos;t let it go
           without a fight. Thank you, Save Lloyd Ice Coalition.
         </p>
+        <a
+          href="https://www.bridgetowniceskatingcollective.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-10 py-5 rounded-xl text-base font-bold font-heading uppercase tracking-wider bg-mint text-primary-darker hover:bg-mint-dark hover:-translate-y-[3px] transition-all animate-[pulse-glow_2s_ease-in-out_infinite]"
+        >
+          Support Bridgetown Ice Skating Collective
+        </a>
       </div>
     </section>
   );
