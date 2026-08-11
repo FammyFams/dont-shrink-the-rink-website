@@ -1,7 +1,11 @@
+import ParallaxHero from "@/components/ParallaxHero";
+
 export default function HomePage() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center text-white bg-primary-darker px-6 py-24">
-      <div className="max-w-[720px] mx-auto">
+    <section className="relative min-h-screen flex items-center justify-center text-center text-white bg-primary-darker px-6 py-24 overflow-hidden">
+      <ParallaxHero imageUrl="https://i.redd.it/ewbwbbpph5eg1.jpeg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.7)] via-[rgba(13,42,58,0.75)] to-[rgba(21,53,72,0.95)]" />
+      <div className="relative z-[1] max-w-[720px] mx-auto">
         <h1 className="font-heading text-[clamp(40px,7vw,72px)] font-black uppercase tracking-wide leading-[1.05] mb-6">
           Womp Womp.
         </h1>
